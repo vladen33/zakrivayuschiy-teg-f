@@ -11,7 +11,11 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   min-inline-size: 320px;
+  inline-size: var(--block-global-width);
   min-block-size: 100dvb;
   font-family: var(--font-family-main), sans-serif;
   font-variation-settings: 'wght' var(--font-weight-text);
@@ -19,4 +23,40 @@
   background-attachment: fixed;
   background-size: cover;
 
+}
+
+.header, .main {
+  inline-size: var(--site-content-width);
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 100px;
+  background-color: white;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+.main {
+  margin-bottom: 100px;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: var(--font-family-accent);
+  text-transform: uppercase;
+  text-align: center;
+  padding: var(--header-vertical-padding) 0;
+
+}
+
+.header__title_large {
+  font-size: var(--header-font-size-large);
+}
+
+.header__title_small {
+  font-size: var(--header-font-size-small);
 }
