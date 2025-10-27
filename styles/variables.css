@@ -9,8 +9,10 @@
     linear-gradient(to bottom,#e7e7e7 0.01%, #1a1a1a 100%);
 
   --site-content-width: clamp(320px, 100%, 700px);
+  --save-button-width: clamp(19.125rem, 17.0337rem + 8.9231vw, 20.9375rem);
 
   --header-font-size-large: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
   --header-font-size-small: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
   --header-vertical-padding: clamp(7.625rem, 7.0481rem + 2.4615vw, 8.125rem);
+
 }
