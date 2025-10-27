@@ -70,7 +70,7 @@
 
 .card__title {
   font-size: 18px;
-  font-variation-settings: 'wght' 715;
+  font-variation-settings: 'wght' var(--font-weight-header);
   padding: 4px 10px;
 }
 
@@ -122,6 +122,7 @@
 
 }
 .floppy-icon {
-  height: 28px;
-  width: 28px;
+    align-self: center;
+    inline-size: 39px;
+    block-size: 39px;
 }
