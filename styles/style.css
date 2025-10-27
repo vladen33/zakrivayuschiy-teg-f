@@ -88,6 +88,7 @@
 .button {
   font-family: var(--font-family-accent), serif;
   font-size: 14px;
+  line-height: 90%;
   background-color: white;
   border: none;
   padding: 0;
@@ -114,15 +115,18 @@
 
 .button-save-container {
   display: flex;
+  gap: 8px;
   align-self: center;
+  align-items: center;
+  justify-items: center;
   width: var(--save-button-width);
   flex-wrap: wrap;
-  padding: 17px 20px;
+  padding: 15px 18px;
   border:2px solid black;
 
 }
 .floppy-icon {
     align-self: center;
-    inline-size: 39px;
-    block-size: 39px;
+    inline-size: var(--save-button-floppy-icon-size);
+    block-size: var(--save-button-floppy-icon-size);
 }
