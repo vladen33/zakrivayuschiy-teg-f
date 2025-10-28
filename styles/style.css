@@ -157,13 +157,18 @@
 }
 
 .dialog[open] {
+  position: fixed;
+  inset: 0;
   width: var(--dialog-width);
+  padding: 30px var(--dialog-padding-sides);
   display: grid;
-  grid-template-columns: repeat(2, fit-content);
-  grid-template-rows: repeat(2, fit-content);
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas:
     "icon text"
     "button button";
+  row-gap: 30px;
+  column-gap: 20px;
   font-family: var(--font-family-accent);
   font-size: 14px;
   text-transform: uppercase;
@@ -184,4 +189,7 @@
 .dialog__button {
   grid-area: button;
   line-height: 90%;
+  border:2px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
