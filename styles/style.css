@@ -83,7 +83,9 @@
   right: 25px;
   font-family: 'PressStart2P', sans-serif;
   font-size: 14px;
+  text-transform: uppercase;
   color: black;
+  background-color: transparent;
   mix-blend-mode: hard-light;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
   @supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff) {
