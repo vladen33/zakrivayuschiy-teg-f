@@ -73,6 +73,26 @@
   padding: 4px 10px;
 }
 
+.card__image-container {
+  position: relative;
+}
+
+.card__label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: 'PressStart2P', sans-serif;
+  font-size: 14px;
+  color: black;
+  mix-blend-mode: hard-light;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  @supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff) {
+    text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow:none;
+  }
+}
+
 .card__image {
   width: 100%;
 }
