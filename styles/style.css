@@ -63,7 +63,6 @@
 }
 
 .card {
-  background-color: white;    
   border: 2px solid black;
 }
 
@@ -107,6 +106,13 @@
   gap: 25px;
 }
 
+.card__buttons {
+  display: flex;
+  justify-content: end;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
 .card:first-child .card__image {
   filter: sepia(0.8) saturate(0.7);
 
@@ -139,25 +145,66 @@
   filter: grayscale(0.8) sepia(0.3) hue-rotate(160deg) saturate(2);
 }
 
+.button__text_effect {  
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  mix-blend-mode: difference;
+}
 .button {
   font-family: var(--font-family-accent), serif;
   font-size: 14px;
   line-height: 90%;
   background-color: white;
-  border: none;
+  border:2px solid black;
   padding: 0;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s ease;
 }
 
-.button-like-container {
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: translateX(0);
+}
+
+
+.button:focus {
+  box-shadow: 2px 2px 0 black;
+  transition: box-shadow 0.3s;
+}
+
+
+
+/* .button-like-container {
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 12px;
+}
+  */
+.card__icon-button {
+  height: 38px;
+  width: 39px;
 
 }
+
 .card__like-button {
-  border:2px solid black;
+  padding: 10px 35px;
 }
+/*
 .button__text {
   padding: 12px 36px;
 }
@@ -165,7 +212,7 @@
 .like-icon {
   height: 24px;
   width: 27px;
-}
+} */
 
 .button-save-container {
   display: flex;
@@ -176,7 +223,7 @@
   width: var(--save-button-width);
   flex-wrap: wrap;
   padding: 15px 18px;
-  border:2px solid black;
+
 
 }
 .floppy-icon {
@@ -221,8 +268,6 @@
 
 .dialog__button {
   grid-area: button;
-  line-height: 90%;
-  border:2px solid black;
   padding-top: 10px;
   padding-bottom: 10px;
 }
