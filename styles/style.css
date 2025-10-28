@@ -81,7 +81,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: 'PressStart2P', sans-serif;
+  font-family: var(--font-family-accent), sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: black;
@@ -150,4 +150,38 @@
     align-self: center;
     inline-size: var(--save-button-floppy-icon-size);
     block-size: var(--save-button-floppy-icon-size);
+}
+
+.dialog {
+  display: none;
+}
+
+.dialog[open] {
+  width: var(--dialog-width);
+  display: grid;
+  grid-template-columns: repeat(2, fit-content);
+  grid-template-rows: repeat(2, fit-content);
+  grid-template-areas:
+    "icon text"
+    "button button";
+  font-family: var(--font-family-accent);
+  font-size: 14px;
+  text-transform: uppercase;
+
+}
+
+.dialog__floppy-icon {
+  grid-area: icon;
+  width: 39px;
+  height: 39px;
+}
+
+.dialog__text {
+  grid-area: text;
+  line-height: 150%;
+}
+
+.dialog__button {
+  grid-area: button;
+  line-height: 90%;
 }

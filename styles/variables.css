@@ -12,6 +12,7 @@
   --save-button-width: clamp(19.125rem, 17.0337rem + 8.9231vw, 20.9375rem);
   /* --save-button-floppy-icon-size: clamp(1.75rem, 2.2548rem + -2.1538vw, 1.3125rem); */
   --save-button-floppy-icon-size: clamp(21px, calc(28px - 7 * ((100vw - 375px) / 325)), 28px);
+  --dialog-width: clamp(21.3125rem, 20.4471rem + 3.6923vw, 22.0625rem);
 
 
 
