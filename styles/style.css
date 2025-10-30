@@ -219,8 +219,14 @@
 .button:hover .button-save__floppy-icon {
   mix-blend-mode: difference;
   color: white;
-
 }
+
+
+.card__icon-button:focus-visible like-icon {
+  border: 2px solid black;
+} 
+
+
 
 .dialog {
   display: none;
