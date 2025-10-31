@@ -201,7 +201,7 @@
 .like-icon {
   height: 38px;
   width: 39px;
-  --heart-animation-color: rgba(255, 0, 0, 0);
+  --heart-fill-color: rgba(255, 0, 0, 0);
   margin-left: -2px;
   /* align-self: center;
   justify-self: center; */
@@ -209,7 +209,7 @@
 
 .card__icon-button:focus {
   outline: none;
-  border: 2px solid black;
+
 } 
 
 .card__icon-button:focus-visible {
@@ -247,7 +247,21 @@
   border: 2px solid black;
 } 
 
+.contour {
+  transition: fill 0.1s linear;
+}
 
+.core {
+  transition: fill 0.3s linear 0.03s;
+}
+
+.main-body {
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .core {
+
+}
 
 .dialog {
   display: none;

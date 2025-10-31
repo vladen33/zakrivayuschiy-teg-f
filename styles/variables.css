@@ -20,7 +20,7 @@
   --header-vertical-padding: clamp(7.625rem, 7.0481rem + 2.4615vw, 8.125rem);
 
   --heart-contour-color: #000;
-  --heart-animation-color: #f00;
+  --heart-fill-color: #f00;
 
 
 }
