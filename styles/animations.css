@@ -13,7 +13,7 @@
 
 @keyframes scale-heart {
   0% {
-    transform: scale(1);    
+    transform: scale(1);
   }
   100% {
     transform: scale(1.25);
@@ -22,12 +22,12 @@
 
 @keyframes flash-sparks {
   0% {
-    fill: #ff000000;
+    fill: var(--heart-accent-color-no-visible, #ff000000);
   }
   50% {
-    fill: #ff0000ff;
+    fill: var(--heart-accent-color-visible, #ff0000ff);
   }
   100% {
-    fill: #ff000000;
+    fill: var(--heart-accent-color-no-visible, #ff000000);
   }
 }

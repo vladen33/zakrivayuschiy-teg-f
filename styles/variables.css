@@ -21,6 +21,8 @@
 
   --heart-normal-color: #000;
   --heart-accent-color: #f00;
+  --heart-accent-color-no-visible: #ff000000;
+  --heart-accent-color-visible: #ff0000ff;
   --border-color: #000;
   --primary-color: #fff;
   --secondary-color: #000;
