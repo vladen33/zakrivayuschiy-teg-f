@@ -60,7 +60,6 @@
 
 .header__title {
   font-size: var(--header-font-size-small);
-
 }
 
 .card {
@@ -71,7 +70,9 @@
   font-size: 18px;
   font-variation-settings: 'wght' var(--font-weight-header);
   padding: 4px 10px;
-  line-height: 100%;
+  line-height: 120%;
+  margin-top: 1px;
+
 }
 
 .card__image-container {
@@ -99,19 +100,25 @@
 
 .card__image {
   width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .card__content {
-  padding: 25px;
+  padding: 21px 25px 25px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
+.card__text {
+  font-size: 18px;
+}
+
 .card__buttons {
   display: flex;
   justify-content: end;
-  gap: 7px;
+  gap: 9px;
   padding-right: 25px;
   padding-bottom: 25px;
 }
@@ -204,7 +211,7 @@
   height: 38px;
   width: 39px;
   --heart-fill-color: rgba(255, 0, 0, 0);
-  margin-left: -2px;
+  /* margin-left: -2px; */
 }
 
 .card__icon-button:focus {
