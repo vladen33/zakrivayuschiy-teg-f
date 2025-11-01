@@ -17,7 +17,9 @@
 
   --header-font-size-large: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
   --header-font-size-small: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
-  --header-vertical-padding: clamp(7.625rem, 7.0481rem + 2.4615vw, 8.125rem);
+
+  /* --header-vertical-padding: clamp(7.625rem, 7.0481rem + 2.4615vw, 8.125rem); */
+  --header-vertical-padding: clamp(7.5rem, 6.9231rem + 2.4615vw, 8rem);
 
   --heart-contour-color: #000;
   --heart-fill-color: #f00;

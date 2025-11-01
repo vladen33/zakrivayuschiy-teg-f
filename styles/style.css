@@ -60,6 +60,7 @@
 
 .header__title {
   font-size: var(--header-font-size-small);
+
 }
 
 .card {
@@ -70,6 +71,7 @@
   font-size: 18px;
   font-variation-settings: 'wght' var(--font-weight-header);
   padding: 4px 10px;
+  line-height: 100%;
 }
 
 .card__image-container {
