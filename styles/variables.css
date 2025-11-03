@@ -26,4 +26,14 @@
   --border-color: #000;
   --primary-color: #fff;
   --secondary-color: #000;
+
+  --brightness-higher: brightness(1.2);
+  --contrast-higher: contrast(1.2);
+  --saturate-low: saturate(0.5);
+  --saturate-high: saturate(1.5);
+  --sepia-low: sepia(0.4);
+  --sepia-mid: sepia(0.7);
+  --sepia-high: sepia(1);
+  --hue-rotate-a-little: hue-rotate(10deg);
+  --hue-rotate-mid: hue-rotate(180deg);
 }

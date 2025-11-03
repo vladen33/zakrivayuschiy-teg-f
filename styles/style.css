@@ -127,36 +127,36 @@
   padding-bottom: 25px;
 }
 
-.card:first-child .card__image {
-  filter: sepia(0.8) saturate(0.7);
+.card__image_beginning {
+  filter: var(--sepia-mid) var(--saturate-low);
 
 }
-.card:nth-child(2) .card__image {
-  filter: sepia(0.6) contrast(0.9) brightness(1.1);
+.card__image_clean-sheet {
+  filter: var(--sepia-mid) var(--contrast-higher) var(--brightness-higher);
 
 }
-.card:nth-child(3) .card__image {
-  filter: grayscale(1) hue-rotate(200deg) saturate(1.5);
+.card__image_fear {
+  filter: var(--hue-rotate-a-little) var(--saturate-high);
 }
 
-.card:nth-child(4) .card__image {
-  filter: saturate(0.5) blur(1px) brightness(1.1);
+.card__image_lookig-ideal {
+  filter: var(--saturate-low) var(--brightness-higher) var(--hue-rotate-mid);
 }
 
-.card:nth-child(5) .card__image {
-  filter: grayscale(1) sepia(1) hue-rotate(180deg);
+.card__image_helpmates {
+  filter: var(--sepia-high) var(--hue-rotate-mid);
 }
 
-.card:nth-child(6) .card__image {
-  filter: saturate(0.6) contrast(1.1) brightness(0.9);
+.card__image_strategies {
+  filter: var(--saturate-low) var(--contrast-higher) var(--brightness-higher);
 }
 
-.card:nth-child(7) .card__image {
-  filter: drop-shadow(0 0 5px #0ff) brightness(1.3);
+.card__image_give-up-hands {
+  filter: var(--brightness-higher);
 }
 
-.card:nth-child(8) .card__image {
-  filter: grayscale(0.8) sepia(0.3) hue-rotate(160deg) saturate(2);
+.card__image_i-am-here {
+  filter: var(--sepia-low) var(--hue-rotate-a-little) var(--saturate-high);
 }
 
 .button__text_effect {
