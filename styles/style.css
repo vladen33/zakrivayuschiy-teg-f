@@ -324,8 +324,6 @@
 }
 
 .dialog[open] {
-  position: fixed;
-  inset: 0;
   width: var(--dialog-width);
   padding: 30px var(--dialog-padding-sides);
   display: grid;
