@@ -27,13 +27,12 @@
   --primary-color: #fff;
   --secondary-color: #000;
 
-  --brightness-higher: brightness(1.2);
-  --contrast-higher: contrast(1.2);
-  --saturate-low: saturate(0.5);
-  --saturate-high: saturate(1.5);
-  --sepia-low: sepia(0.4);
-  --sepia-mid: sepia(0.7);
-  --sepia-high: sepia(1);
-  --hue-rotate-a-little: hue-rotate(10deg);
-  --hue-rotate-mid: hue-rotate(180deg);
+  --filter-vintage-warm: sepia(0.6) contrast(1.15) brightness(1.1);
+  --filter-monochrome-blue: hue-rotate(180deg) brightness(1.05);
+  --filter-pastel-dream: saturate(0.7) brightness(1.2) blur(1px);
+  --filter-neon-glow: saturate(1.6) brightness(1.3) contrast(1.2);
+  --filter-muted-film: grayscale(0.3) contrast(0.9) sepia(0.2);
+  --filter-sharp-clear: contrast(2) brightness(1) saturate(1.2);
+  --filter-faded-memory: sepia(0.4) brightness(0.85) blur(0.5px);
+  --filter-cool-tone: hue-rotate(200deg) saturate(1.1) contrast(1.1);
 }

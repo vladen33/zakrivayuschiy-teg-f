@@ -127,36 +127,38 @@
   padding-bottom: 25px;
 }
 
-.card__image_beginning {
-  filter: var(--sepia-mid) var(--saturate-low);
-
-}
-.card__image_clean-sheet {
-  filter: var(--sepia-mid) var(--contrast-higher) var(--brightness-higher);
-
-}
-.card__image_fear {
-  filter: var(--hue-rotate-a-little) var(--saturate-high);
+.filter-vintage-warm {
+  filter: var(--filter-vintage-warm);
 }
 
-.card__image_lookig-ideal {
-  filter: var(--saturate-low) var(--brightness-higher) var(--hue-rotate-mid);
+.filter-monochrome-blue {
+  filter: var(--filter-monochrome-blue);
 }
 
-.card__image_helpmates {
-  filter: var(--sepia-high) var(--hue-rotate-mid);
+.filter-pastel-dream {
+
+  filter: var(--filter-pastel-dream);
 }
 
-.card__image_strategies {
-  filter: var(--saturate-low) var(--contrast-higher) var(--brightness-higher);
+.filter-neon-glow {
+  filter: var(--filter-neon-glow);
 }
 
-.card__image_give-up-hands {
-  filter: var(--brightness-higher);
+.filter-muted-film {
+  filter: var(--filter-muted-film);
+  
 }
 
-.card__image_i-am-here {
-  filter: var(--sepia-low) var(--hue-rotate-a-little) var(--saturate-high);
+.filter-sharp-clear {
+  filter: var(--filter-sharp-clear);
+}
+
+.filter-faded-memory {
+  filter: var(--filter-faded-memory);
+}
+
+.filter-cool-tone {
+  filter: var(--filter-cool-tone);
 }
 
 .button__text_effect {
