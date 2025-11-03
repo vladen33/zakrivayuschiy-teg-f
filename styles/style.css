@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: var(--font-family-accent), 'PressStart2P';
+  font-family: var(--font-family-accent), fantasy;
   text-transform: uppercase;
   text-align: center;
   padding: var(--header-vertical-padding, 120px) 0;
@@ -82,7 +82,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-size: 14px;
   text-transform: uppercase;
   color: #000;
@@ -166,7 +166,7 @@
   mix-blend-mode: difference;
 }
 .button {
-  font-family: var(--font-family-accent), serif;
+  font-family: var(--font-family-accent), fantasy;
   font-size: 14px;
   line-height: 90%;
   background-color: var(--primary-color, #fff);
@@ -334,7 +334,7 @@
     "button button";
   row-gap: 30px;
   column-gap: 20px;
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), fantasy;
   font-size: 14px;
   text-transform: uppercase;
 

@@ -1,6 +1,6 @@
 :root {
   --font-family-main: 'Inter';
-  --font-family-accent: 'PressStart2P';
+  --font-family-accent: 'PressStart2P', 'DejaVu Sans Mono', 'Monaco', 'Lucida Console';
   --font-weight-header: 715;
   --font-weight-text: 410;
   --background-image: 
