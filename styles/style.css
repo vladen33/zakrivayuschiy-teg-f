@@ -122,7 +122,7 @@
 .card__buttons {
   display: flex;
   justify-content: end;
-  gap: 9px;
+  gap: 7px;
   padding-right: 25px;
   padding-bottom: 25px;
 }
@@ -203,6 +203,7 @@
 }
 
 .card__icon-button {
+  display: flex;
   height: 38px;
   width: 38px;
   border: 2px solid transparent;
@@ -210,13 +211,16 @@
 }
 
 .card__like-button {
-  padding: 10px 35px;
+  min-width: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .like-icon {
   height: 38px;
   width: 39px;
-
+  margin-left: -2.5px;
+  z-index: 5;
 }
 
 .card__icon-button:focus {
