@@ -342,6 +342,10 @@
 
 }
 
+.dialog[open]::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
 .dialog__floppy-icon {
   grid-area: icon;
   width: 39px;
