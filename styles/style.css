@@ -40,24 +40,24 @@
   padding: var(--header-vertical-padding, 120px) 0;
   background-color: var(--primary-color, #fff);
 }
-.main {
-  margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
 
 .header__logo {
   font-size: var(--header-font-size-large, clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem));
   @media (width < 375px) {
     font-size: clamp(2.25rem, 1.9545rem + 4.7273vw, 3.0625rem);
   }
-  
+
 }
 
 .header__title {
   font-size: var(--header-font-size-small, clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem));
+}
+
+.main {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .card {
@@ -129,45 +129,44 @@
 }
 
 .filter-vintage-warm {
-  filter: var(--filter-vintage-warm);
+  filter: var(--filter-vintage-warm, none);
 }
 
 .filter-monochrome-blue {
-  filter: var(--filter-monochrome-blue);
+  filter: var(--filter-monochrome-blue, none);
 }
 
 .filter-pastel-dream {
-
-  filter: var(--filter-pastel-dream);
+  filter: var(--filter-pastel-dream, none);
 }
 
 .filter-neon-glow {
-  filter: var(--filter-neon-glow);
+  filter: var(--filter-neon-glow, none);
 }
 
 .filter-muted-film {
-  filter: var(--filter-muted-film);
-  
+  filter: var(--filter-muted-film), none;
 }
 
 .filter-sharp-clear {
-  filter: var(--filter-sharp-clear);
+  filter: var(--filter-sharp-clear, none);
 }
 
 .filter-faded-memory {
-  filter: var(--filter-faded-memory);
+  filter: var(--filter-faded-memory, none);
 }
 
 .filter-cool-tone {
-  filter: var(--filter-cool-tone);
+  filter: var(--filter-cool-tone, none);
 }
 
-.button_effect {
+.button__animation-effect {
   position: relative;
   z-index: 1;
   color: var(--primary-color, #fff);
   mix-blend-mode: difference;
 }
+
 .button {
   font-family: var(--font-family-accent), fantasy;
   font-size: 14px;
@@ -197,7 +196,6 @@
   transform: translateX(0);
 }
 
-
 .button:focus {
   box-shadow: 2px 2px 0 var(--border-color, #000);
   transition: box-shadow 0.3s;
@@ -226,12 +224,11 @@
 
 .card__icon-button:focus {
   outline: none;
-
-} 
+}
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--border-color, #000);
-} 
+}
 
 .button-save {
   display: flex;
@@ -258,7 +255,7 @@
 
 .card__icon-button:focus-visible like-icon {
   border: 2px solid var(--border-color, #000);
-} 
+}
 
 .contour {
   color: var(--heart-normal-color, #000);
@@ -322,8 +319,8 @@
 
 .dialog {
   display: none;
-  width: var(--dialog-width);
-  padding: 30px var(--dialog-padding-sides);
+  width: var(--dialog-width, 21rem);
+  padding: 30px var(--dialog-padding-sides, 35px);
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas:
