@@ -117,6 +117,7 @@
 
 .card__text {
   font-size: 18px;
+  line-height: 21px;
 }
 
 .card__buttons {
@@ -361,7 +362,7 @@
 .dialog__button {
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 10px;  
+  padding-bottom: 10px;
 }
 .dialog__button-text {
   text-transform: uppercase;
